@@ -3,590 +3,1054 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="KapoorAI builds workflow intelligence and operational systems for schools and colleges across India." />
-  <title>KapoorAI</title>
+  <meta name="description" content="KapoorAI redesigns workflows before implementing AI — so the AI actually gets used. Workflow-first AI integration for organizations that operate at scale." />
+  <title>KapoorAI — Workflow-First AI Integration</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header id="header">
-    <div class="container">
-      <div class="nav-row">
-        <a href="#" class="logo">Kapoor<span>AI</span></a>
-        <nav class="nav-links" id="navLinks">
-          <a href="#problem">The Problem</a>
-          <a href="#services">What We Do</a>
-          <a href="#work">Our Work</a>
-          <a href="#process">Process</a>
-          <a href="#contact" class="nav-btn">Get in Touch</a>
-        </nav>
-        <button class="burger" id="burger" aria-label="Open menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <header id="site-header">
+    <div class="nav-wrap">
+      <a href="#home" class="logo" aria-label="KapoorAI home">
+        <span class="logo-mark">K</span>apoorAI
+      </a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+        <a href="#problem"      class="nav-link">The Problem</a>
+        <a href="#method"       class="nav-link">Method</a>
+        <a href="#services"     class="nav-link">Services</a>
+        <a href="#solutions"    class="nav-link">Solutions</a>
+        <a href="#products"     class="nav-link">Products</a>
+        <a href="#zero-to-one" class="nav-link">Zero to One</a>
+        <a href="#contact"      class="nav-link">Contact</a>
+      </nav>
+
+      <a href="#contact" class="nav-cta" id="nav-cta">Book a Call</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-inner">
-        <div class="hero-text">
-          <p class="hero-eyebrow fade-up">Workflow Intelligence · Educational Institutions</p>
-          <h1 class="fade-up">Your institution deserves systems, not workarounds.</h1>
-          <p class="hero-desc fade-up">Most schools and colleges run on coordination that lives inside people's heads — WhatsApp messages, verbal instructions, and staff memory. KapoorAI replaces that fragility with structured operational systems that run reliably.</p>
-          <div class="hero-ctas fade-up">
-            <a href="#contact" class="btn-primary">Start a Conversation</a>
-            <a href="#services" class="btn-outline">See What We Build</a>
+  <!-- Mobile menu -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <nav aria-label="Mobile navigation">
+      <a href="#problem"   class="m-link">The Problem</a>
+      <a href="#method"    class="m-link">Method</a>
+      <a href="#services"  class="m-link">Services</a>
+      <a href="#solutions" class="m-link">Solutions</a>
+      <a href="#products"  class="m-link">Products</a>
+      <a href="#zero-to-one" class="m-link">Zero to One</a>
+      <a href="#contact"     class="m-link">Contact</a>
+    </nav>
+    <a href="#contact" class="m-cta">Book a 30-Minute Discovery Call</a>
+  </div>
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+
+
+  <main>
+
+    <!-- ============================================================
+         SECTION 1 — HERO
+    ============================================================ -->
+    <section id="home" class="hero">
+      <div class="hero-ambient" aria-hidden="true">
+        <div class="orb orb-a"></div>
+        <div class="orb orb-b"></div>
+        <div class="hero-grid"></div>
+      </div>
+
+      <div class="container hero-inner">
+
+        <!-- Left: copy -->
+        <div class="hero-copy">
+          <p class="hero-eyebrow reveal">
+            <span class="eyebrow-pip"></span>
+            Workflow-first AI integration · India
+          </p>
+
+          <h1 class="hero-h1 reveal">
+            Most AI projects fail<br/>
+            at the workflow stage.<br/>
+            <em>We fix that first.</em>
+          </h1>
+
+          <p class="hero-sub reveal">
+            We work inside your operations, map where things break down, and redesign those workflows before choosing any technology. What you get is AI that your team actually uses.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a href="#contact" class="btn btn-primary">Book a 30-Minute Discovery Call</a>
+            <a href="#method" class="btn-text-link">See how it works →</a>
+          </div>
+
+          <!-- Three static descriptor pills — no rotation, no distraction -->
+          <div class="hero-pills reveal" aria-label="Core capabilities">
+            <span class="pill">AI Workflow Architecture</span>
+            <span class="pill">Strategic AI Integration</span>
+            <span class="pill">AI-Built Products</span>
           </div>
         </div>
-        <div class="hero-visual fade-up">
-          <div class="hv-card">
-            <div class="hv-card-header">
-              <div class="hv-dots">
-                <span class="dot r"></span><span class="dot a"></span><span class="dot g"></span>
-              </div>
-              <span class="hv-label">Operational Dashboard</span>
+
+        <!-- Right: workflow pipeline visual -->
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="wf-card">
+            <div class="wf-card-header">
+              <span class="wf-card-label">Workflow Intelligence Engine</span>
+              <span class="wf-live">
+                <span class="live-dot"></span>Live
+              </span>
             </div>
-            <div class="hv-body">
-              <div class="hv-metric">
-                <div class="hv-metric-left">
-                  <span class="hv-metric-title">Query Resolution</span>
-                  <span class="hv-metric-sub">Avg. response under 4 hours</span>
+
+            <div class="wf-steps">
+              <div class="wf-step wf-done">
+                <div class="wf-step-dot wf-dot-done">
+                  <svg viewBox="0 0 14 14" fill="none" width="10" height="10" aria-hidden="true">
+                    <polyline points="2.5,7 5.5,10 11.5,3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
                 </div>
-                <span class="hv-badge green">Healthy</span>
-              </div>
-              <div class="hv-bar-row">
-                <div class="hv-bar-track"><div class="hv-bar-fill" style="width:91%"></div></div>
-                <span class="hv-bar-label">91%</span>
-              </div>
-
-              <div class="hv-divider"></div>
-
-              <div class="hv-metric">
-                <div class="hv-metric-left">
-                  <span class="hv-metric-title">Admissions Pipeline</span>
-                  <span class="hv-metric-sub">3 stages · tracked automatically</span>
-                </div>
-                <span class="hv-badge green">Active</span>
-              </div>
-              <div class="hv-pipeline">
-                <div class="hv-stage">
-                  <span class="hv-stage-num">124</span>
-                  <span class="hv-stage-name">Enquiry</span>
-                </div>
-                <div class="hv-arrow">›</div>
-                <div class="hv-stage">
-                  <span class="hv-stage-num">89</span>
-                  <span class="hv-stage-name">Follow-up</span>
-                </div>
-                <div class="hv-arrow">›</div>
-                <div class="hv-stage active-stage">
-                  <span class="hv-stage-num">61</span>
-                  <span class="hv-stage-name">Enrolled</span>
+                <div class="wf-step-text">
+                  <span class="wf-step-name">Discovery complete</span>
+                  <span class="wf-step-state">14 friction points identified</span>
                 </div>
               </div>
 
-              <div class="hv-divider"></div>
+              <div class="wf-connector"></div>
 
-              <div class="hv-tasks">
-                <div class="hv-task done">
-                  <svg viewBox="0 0 16 16" fill="none" width="14" height="14"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/><polyline points="5,8 7,10 11,6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-                  Exam schedule published to all classes
+              <div class="wf-step wf-done">
+                <div class="wf-step-dot wf-dot-done">
+                  <svg viewBox="0 0 14 14" fill="none" width="10" height="10" aria-hidden="true">
+                    <polyline points="2.5,7 5.5,10 11.5,3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
                 </div>
-                <div class="hv-task done">
-                  <svg viewBox="0 0 16 16" fill="none" width="14" height="14"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/><polyline points="5,8 7,10 11,6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-                  Progress reports dispatched to parents
-                </div>
-                <div class="hv-task pending">
-                  <svg viewBox="0 0 16 16" fill="none" width="14" height="14"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/><line x1="8" y1="5" x2="8" y2="8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="10.5" r="0.75" fill="currentColor"/></svg>
-                  Fee reminder cycle — 2 pending
+                <div class="wf-step-text">
+                  <span class="wf-step-name">Workflow analysis</span>
+                  <span class="wf-step-state">8 workflows redesigned</span>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- PROBLEM -->
-  <section id="problem" class="section section-alt">
-    <div class="container">
-      <div class="section-head fade-up">
-        <span class="eyebrow">The Problem</span>
-        <h2>Institutions are well-run by people. They should be well-run by systems.</h2>
-        <p>The difference between an institution that scales and one that strains is whether its operations depend on specific people — or on structured systems that work regardless of who is in the room.</p>
-      </div>
-      <div class="problem-grid">
+              <div class="wf-connector"></div>
 
-        <div class="prob-card fade-up">
-          <div class="prob-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          </div>
-          <h3>Queries with no clear owner</h3>
-          <p>Student and parent queries arrive through multiple channels. Without a structured intake, routing, and tracking system, responses are delayed, duplicated, or never sent.</p>
-        </div>
-
-        <div class="prob-card fade-up">
-          <div class="prob-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-          </div>
-          <h3>Tasks that live in conversations</h3>
-          <p>When instructions are assigned verbally or over chat, there is no record of what was asked, who owns it, or whether it was completed. Accountability becomes a matter of trust rather than structure.</p>
-        </div>
-
-        <div class="prob-card fade-up">
-          <div class="prob-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-          </div>
-          <h3>Data scattered across spreadsheets</h3>
-          <p>When the same information lives in multiple Excel files maintained by different people, errors are inevitable. Decisions get made on data that is already outdated.</p>
-        </div>
-
-        <div class="prob-card fade-up">
-          <div class="prob-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <h3>Admissions dependent on one person</h3>
-          <p>When follow-up lives in someone's call history and head, the quality of admissions conversion fluctuates entirely with that person's availability and memory.</p>
-        </div>
-
-        <div class="prob-card fade-up">
-          <div class="prob-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-          </div>
-          <h3>Tools that operate in isolation</h3>
-          <p>Your LMS, ERP, and communication tools each hold overlapping data with no connection between them. Every update requires manual re-entry — and creates a new opportunity for error.</p>
-        </div>
-
-        <div class="prob-card fade-up">
-          <div class="prob-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <h3>Compliance managed informally</h3>
-          <p>DPDP Act, POCSO digital obligations, CERT-In requirements — most institutions have policies on paper that have never been tested against the actual legal frameworks they reference.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section id="services" class="section">
-    <div class="container">
-      <div class="section-head fade-up">
-        <span class="eyebrow">What We Build</span>
-        <h2>Six areas of operational work. All of them connected.</h2>
-        <p>KapoorAI works across the operational layer of educational institutions — the part that sits between leadership and teaching, and determines whether everything else runs smoothly.</p>
-      </div>
-      <div class="services-list">
-
-        <div class="svc-item fade-up">
-          <div class="svc-left">
-            <span class="svc-num">01</span>
-            <span class="svc-tag">Foundation</span>
-          </div>
-          <div class="svc-body">
-            <h3>Workflow Audit &amp; Operational Mapping</h3>
-            <p>We begin every engagement by mapping how your institution actually operates — not how it's supposed to. Structured discovery sessions across every department surface the real workflows, the real bottlenecks, and the decisions that should be systemised.</p>
-            <div class="svc-tags">
-              <span>Discovery sessions</span>
-              <span>Workflow documentation</span>
-              <span>Bottleneck identification</span>
-              <span>Manual dependency analysis</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="svc-item fade-up">
-          <div class="svc-left">
-            <span class="svc-num">02</span>
-            <span class="svc-tag">Communication</span>
-          </div>
-          <div class="svc-body">
-            <h3>Student Query &amp; Request Management</h3>
-            <p>A structured system that gives every query a clear owner, a defined timeline, and a resolution record. Leadership can see what's open, what's overdue, and what's been resolved — without asking anyone.</p>
-            <div class="svc-tags">
-              <span>Intake &amp; routing</span>
-              <span>Ownership assignment</span>
-              <span>Resolution tracking</span>
-              <span>Response analytics</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="svc-item fade-up">
-          <div class="svc-left">
-            <span class="svc-num">03</span>
-            <span class="svc-tag">Operations</span>
-          </div>
-          <div class="svc-body">
-            <h3>Internal Task &amp; Coordination System</h3>
-            <p>Every instruction assigned to staff carries a clear owner, a deadline, and a status visible to leadership. Tasks escalate automatically when overdue. Nothing falls through the cracks because there are no cracks.</p>
-            <div class="svc-tags">
-              <span>Task assignment</span>
-              <span>Deadline management</span>
-              <span>Auto-escalation</span>
-              <span>Completion visibility</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="svc-item fade-up">
-          <div class="svc-left">
-            <span class="svc-num">04</span>
-            <span class="svc-tag">Integration</span>
-          </div>
-          <div class="svc-body">
-            <h3>LMS · ERP · Google Workspace Integration</h3>
-            <p>Connect your institution's existing tools so data moves between them without human intervention. Assignment distribution, grade recording, and academic data sync happen automatically — not manually.</p>
-            <div class="svc-tags">
-              <span>API integration</span>
-              <span>Bidirectional sync</span>
-              <span>Google Classroom</span>
-              <span>ERP connectivity</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="svc-item fade-up">
-          <div class="svc-left">
-            <span class="svc-num">05</span>
-            <span class="svc-tag">Admissions</span>
-          </div>
-          <div class="svc-body">
-            <h3>Admissions Pipeline &amp; Follow-up System</h3>
-            <p>A structured pipeline that tracks every enquiry through defined stages, fires follow-up reminders automatically, and gives leadership clear visibility into conversion rates — independent of which staff member is handling it.</p>
-            <div class="svc-tags">
-              <span>Enquiry tracking</span>
-              <span>Stage management</span>
-              <span>Automated follow-up</span>
-              <span>Conversion reporting</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="svc-item fade-up">
-          <div class="svc-left">
-            <span class="svc-num">06</span>
-            <span class="svc-tag">Compliance</span>
-          </div>
-          <div class="svc-body">
-            <h3>IT Governance &amp; Policy Audit</h3>
-            <p>A structured legal and technical review of your institution's IT and data governance — mapped against DPDP Act 2023, POCSO digital obligations, CERT-In requirements, and NEP 2020. Delivered with documented findings and a clear remediation roadmap.</p>
-            <div class="svc-tags">
-              <span>DPDP Act 2023</span>
-              <span>POCSO compliance</span>
-              <span>CERT-In obligations</span>
-              <span>Remediation roadmap</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- WORK -->
-  <section id="work" class="section section-alt">
-    <div class="container">
-      <div class="section-head fade-up">
-        <span class="eyebrow">Our Work</span>
-        <h2>Engagements with real scope, real depth, real outcomes.</h2>
-        <p>KapoorAI has worked inside educational institutions — not as an outside observer, but as the operational partner responsible for designing and building the systems described above.</p>
-      </div>
-
-      <div class="work-list">
-
-        <div class="work-item fade-up">
-          <div class="work-meta">
-            <span class="work-type">School · New Delhi</span>
-            <span class="work-status">Active</span>
-          </div>
-          <div class="work-body">
-            <h3>AI Knowledge System &amp; Full LMS–ERP Integration</h3>
-            <p>Designed and built an internal AI knowledge system — allowing staff to query institutional data in natural language — alongside a complete integration layer connecting the school's LMS, ERP, and Google Classroom. Assignments distributed through Classroom are recorded automatically in the ERP. Grade data flows back without manual entry. The school's academic data infrastructure now operates as a connected system rather than a collection of isolated tools.</p>
-            <div class="work-scope">
-              <div class="ws-col">
-                <div class="ws-label">Systems Built</div>
-                <ul>
-                  <li>AI knowledge search (RAG architecture)</li>
-                  <li>Google Classroom API integration</li>
-                  <li>ERP bidirectional data sync</li>
-                  <li>Grade processing &amp; LO/LOB mapping engine</li>
-                </ul>
+              <div class="wf-step wf-active">
+                <div class="wf-step-dot wf-dot-active">
+                  <span class="pulse"></span>
+                </div>
+                <div class="wf-step-text">
+                  <span class="wf-step-name">AI integration</span>
+                  <span class="wf-step-state wf-state-active">In progress · Week 4</span>
+                </div>
               </div>
-              <div class="ws-col">
-                <div class="ws-label">Outcome</div>
-                <ul>
-                  <li>Manual data re-entry eliminated</li>
-                  <li>Academic records update in real time</li>
-                  <li>Staff query resolution time reduced significantly</li>
-                  <li>System runs independently without ongoing intervention</li>
-                </ul>
+
+              <div class="wf-connector wf-connector-dim"></div>
+
+              <div class="wf-step wf-pending">
+                <div class="wf-step-dot wf-dot-pending"></div>
+                <div class="wf-step-text">
+                  <span class="wf-step-name">Optimization</span>
+                  <span class="wf-step-state">Upcoming</span>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="work-item fade-up">
-          <div class="work-meta">
-            <span class="work-type">School &amp; College · New Delhi</span>
-            <span class="work-status">Completed</span>
-          </div>
-          <div class="work-body">
-            <h3>IT Governance &amp; Compliance Audit</h3>
-            <p>Conducted a full legal and technical audit of a combined institutional IT policy document against five Indian regulatory frameworks. Identified critical gaps — including mandatory reporting language that created direct legal exposure under POCSO, absent CERT-In obligations, and insufficient consent mechanisms under the DPDP Act. Delivered a structured audit report with severity classifications, five operational SOPs, technical verification checklists, and a 90-day prioritised remediation roadmap.</p>
-            <div class="work-scope">
-              <div class="ws-col">
-                <div class="ws-label">Frameworks Audited</div>
-                <ul>
-                  <li>DPDP Act 2023 — consent &amp; data rights</li>
-                  <li>POCSO Act — digital reporting obligations</li>
-                  <li>CERT-In Directions 2022</li>
-                  <li>IT Act 2000 &amp; NEP 2020</li>
-                </ul>
+            <!-- Outcome strip -->
+            <div class="wf-outcome">
+              <div class="wf-outcome-item">
+                <span class="wf-outcome-val">100%</span>
+                <span class="wf-outcome-label">Manual re-entry eliminated</span>
               </div>
-              <div class="ws-col">
-                <div class="ws-label">Deliverables</div>
-                <ul>
-                  <li>26 documented findings across 5 frameworks</li>
-                  <li>3 critical legal exposures identified &amp; resolved</li>
-                  <li>5 operational SOPs written</li>
-                  <li>90-day remediation roadmap with ownership matrix</li>
-                </ul>
+              <div class="wf-outcome-div"></div>
+              <div class="wf-outcome-item">
+                <span class="wf-outcome-val">8 wks</span>
+                <span class="wf-outcome-label">Discovery to live system</span>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="work-item fade-up">
-          <div class="work-meta">
-            <span class="work-type">Institution · Pune, Maharashtra</span>
-            <span class="work-status">Completed</span>
-          </div>
-          <div class="work-body">
-            <h3>Operational Workflow Design</h3>
-            <p>Mapped the institution's administrative workflows across five operational areas — student queries, internal coordination, data management, evaluation, and admissions. Identified where manual dependency was creating bottlenecks and delivered structured workflow redesigns with defined ownership, automation opportunities, and clear implementation priorities.</p>
-            <div class="work-scope">
-              <div class="ws-col">
-                <div class="ws-label">Areas Covered</div>
-                <ul>
-                  <li>Student query handling workflow</li>
-                  <li>Internal task &amp; coordination flow</li>
-                  <li>Data management &amp; sync structure</li>
-                  <li>Admissions follow-up pipeline</li>
-                </ul>
-              </div>
-              <div class="ws-col">
-                <div class="ws-label">Deliverables</div>
-                <ul>
-                  <li>Full operational workflow map</li>
-                  <li>Manual dependency analysis per area</li>
-                  <li>Structured system proposals</li>
-                  <li>Prioritised implementation roadmap</li>
-                </ul>
+              <div class="wf-outcome-div"></div>
+              <div class="wf-outcome-item">
+                <span class="wf-outcome-val">0</span>
+                <span class="wf-outcome-label">Ongoing dependency on us</span>
               </div>
             </div>
           </div>
         </div>
 
       </div>
+    </section>
 
-      <p class="work-note fade-up">Specific institution details shared directly during a discovery conversation, at your request.</p>
 
-    </div>
-  </section>
-
-  <!-- PROCESS -->
-  <section id="process" class="section">
-    <div class="container">
-      <div class="section-head fade-up">
-        <span class="eyebrow">How We Work</span>
-        <h2>Three phases. No ambiguity at any stage.</h2>
-        <p>Every engagement follows a structured sequence. You always know what is being built, why, and what comes next.</p>
-      </div>
-      <div class="process-grid">
-
-        <div class="proc-item fade-up">
-          <div class="proc-num">01</div>
-          <h3>Discovery</h3>
-          <p>We spend structured time inside your institution — asking the right questions across departments, mapping what actually happens versus what is assumed. No templates applied before understanding your specific context.</p>
-          <div class="proc-output">Workflow Map &amp; Bottleneck Report</div>
+    <!-- ============================================================
+         SECTION 2 — THE PROBLEM
+    ============================================================ -->
+    <section id="problem" class="section">
+      <div class="container">
+        <div class="section-tag-row reveal">
+          <span class="tag">The Problem</span>
         </div>
 
-        <div class="proc-connector fade-up">
-          <div class="proc-line"></div>
-        </div>
+        <h2 class="section-h2 reveal">
+          Your team adopted the tools.<br/>
+          The workflows didn't change.
+        </h2>
 
-        <div class="proc-item fade-up">
-          <div class="proc-num">02</div>
-          <h3>Design</h3>
-          <p>Based entirely on what we found, we design the operational systems your institution needs — with clear ownership structures, integration points, and automation opportunities. Agreed before any build begins.</p>
-          <div class="proc-output">Operational Blueprint &amp; Roadmap</div>
-        </div>
-
-        <div class="proc-connector fade-up">
-          <div class="proc-line"></div>
-        </div>
-
-        <div class="proc-item fade-up">
-          <div class="proc-num">03</div>
-          <h3>Build &amp; Handover</h3>
-          <p>Systems are built, integrated with existing tools, and handed over with full documentation and staff training. The outcome runs independently — it is not contingent on our continued presence.</p>
-          <div class="proc-output">Running System &amp; Full Documentation</div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="why-grid">
-        <div class="why-left fade-up">
-          <span class="eyebrow">Why KapoorAI</span>
-          <h2>We operate at the intersection of workflow design, technology, and institutional understanding.</h2>
-          <p>Most technology vendors understand software. Most management consultants understand process. KapoorAI understands both — specifically in the context of how schools and colleges actually function.</p>
-          <a href="#contact" class="btn-primary">Start a Conversation</a>
-        </div>
-        <div class="why-right">
-          <div class="why-item fade-up">
-            <div class="wi-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-            </div>
-            <div>
-              <h4>Institution-specific, not templated</h4>
-              <p>Every institution has a different operational structure. We map yours before designing anything — because a system built on assumptions will be rejected within a week.</p>
-            </div>
+        <div class="problem-layout">
+          <div class="problem-copy reveal">
+            <p class="problem-p">
+              Most organizations approach AI by choosing a tool first. They run pilots, train staff, and announce the initiative. Six months later, adoption is low, outcomes are unclear, and the investment is hard to justify to anyone who asks.
+            </p>
+            <p class="problem-p">
+              The problem is almost never the technology. It's that the underlying workflow was never redesigned. You cannot layer AI onto a broken process and expect a functioning system. You get a faster version of the same problem.
+            </p>
+            <p class="problem-p problem-thesis">
+              KapoorAI fixes the workflow before touching the technology. Every time.
+            </p>
           </div>
-          <div class="why-item fade-up">
-            <div class="wi-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+
+          <!-- Before / After visual -->
+          <div class="ba-visual reveal">
+            <div class="ba-col ba-before">
+              <div class="ba-label">Before</div>
+              <div class="ba-flow">
+                <div class="ba-node ba-node-manual">Query received</div>
+                <div class="ba-arrow-down"></div>
+                <div class="ba-node ba-node-manual">WhatsApp forward</div>
+                <div class="ba-arrow-down"></div>
+                <div class="ba-node ba-node-warn">Manual follow-up</div>
+                <div class="ba-arrow-down"></div>
+                <div class="ba-node ba-node-warn">No tracking</div>
+                <div class="ba-arrow-down"></div>
+                <div class="ba-node ba-node-fail">Query lost</div>
+              </div>
             </div>
-            <div>
-              <h4>Built to run independently</h4>
-              <p>The systems we deliver are designed to operate without us. Staff-trained, documented, and structured so that the institution is not dependent on continued external support.</p>
+
+            <div class="ba-divider" aria-hidden="true">
+              <div class="ba-divider-line"></div>
+              <div class="ba-divider-icon">→</div>
+              <div class="ba-divider-line"></div>
             </div>
-          </div>
-          <div class="why-item fade-up">
-            <div class="wi-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <div>
-              <h4>Compliance-aware by practice</h4>
-              <p>We have audited institutional IT policies against DPDP Act, POCSO, and CERT-In requirements — so compliance considerations are part of how we design systems, not an afterthought.</p>
-            </div>
-          </div>
-          <div class="why-item fade-up">
-            <div class="wi-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-            </div>
-            <div>
-              <h4>Operational, not academic</h4>
-              <p>We work on the operational and administrative layer — the infrastructure that allows everything else in your institution to function without friction. Not curriculum. Not teaching. The systems underneath.</p>
+
+            <div class="ba-col ba-after">
+              <div class="ba-label ba-label-good">After</div>
+              <div class="ba-flow">
+                <div class="ba-node ba-node-ai">Query received</div>
+                <div class="ba-arrow-down ba-arrow-good"></div>
+                <div class="ba-node ba-node-ai">AI classification</div>
+                <div class="ba-arrow-down ba-arrow-good"></div>
+                <div class="ba-node ba-node-ai">Auto-routed</div>
+                <div class="ba-arrow-down ba-arrow-good"></div>
+                <div class="ba-node ba-node-ai">Owner notified</div>
+                <div class="ba-arrow-down ba-arrow-good"></div>
+                <div class="ba-node ba-node-good">Resolved + logged</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-    <div class="container">
-      <div class="contact-grid">
-        <div class="contact-left fade-up">
-          <span class="eyebrow">Get in Touch</span>
-          <h2>Tell us about your institution.</h2>
-          <p>Describe what is currently creating the most operational friction. We will respond with an honest initial assessment of how we would approach it.</p>
-          <div class="contact-info">
+
+    <!-- ============================================================
+         SECTION 3 — METHOD / PROCESS
+    ============================================================ -->
+    <section id="method" class="section section-stone">
+      <div class="container">
+        <div class="section-tag-row reveal">
+          <span class="tag">How We Work</span>
+        </div>
+
+        <h2 class="section-h2 reveal">
+          Here is exactly what working<br/>with us looks like.
+        </h2>
+        <p class="section-sub reveal">
+          Five phases. A tangible output at every stage. Nothing begins until the previous phase is complete and agreed.
+        </p>
+
+        <div class="method-steps">
+
+          <div class="method-step reveal">
+            <div class="ms-left">
+              <div class="ms-num">01</div>
+              <div class="ms-line"></div>
+            </div>
+            <div class="ms-body">
+              <div class="ms-meta">
+                <h3>Discovery</h3>
+                <span class="ms-duration">1–2 weeks</span>
+              </div>
+              <p>We spend structured time inside your organization — asking the right questions across departments, mapping what actually happens versus what is assumed. Nothing is templated. Every engagement starts from zero.</p>
+              <div class="ms-output">
+                <span class="ms-output-label">You receive</span>
+                <span class="ms-output-val">A complete map of where your organization is losing time and why — with specific friction points ranked by impact.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="method-step reveal">
+            <div class="ms-left">
+              <div class="ms-num">02</div>
+              <div class="ms-line"></div>
+            </div>
+            <div class="ms-body">
+              <div class="ms-meta">
+                <h3>Workflow Analysis</h3>
+                <span class="ms-duration">1–2 weeks</span>
+              </div>
+              <p>We identify which workflows are AI-ready, which need redesigning first, and which should stay untouched. Prioritized by business impact — not by what is technically interesting.</p>
+              <div class="ms-output">
+                <span class="ms-output-label">You receive</span>
+                <span class="ms-output-val">A prioritized AI opportunity matrix — what to automate, what to redesign, what to leave as-is, and in what sequence.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="method-step reveal">
+            <div class="ms-left">
+              <div class="ms-num">03</div>
+              <div class="ms-line"></div>
+            </div>
+            <div class="ms-body">
+              <div class="ms-meta">
+                <h3>AI Strategy</h3>
+                <span class="ms-duration">1 week</span>
+              </div>
+              <p>A concrete plan — tools, integration architecture, success metrics, and timelines — agreed in writing before any build begins. No vague proposals. No surprises mid-engagement.</p>
+              <div class="ms-output">
+                <span class="ms-output-label">You receive</span>
+                <span class="ms-output-val">An integration blueprint with agreed success metrics. You know exactly what you are getting before a line of code is written.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="method-step reveal">
+            <div class="ms-left">
+              <div class="ms-num">04</div>
+              <div class="ms-line"></div>
+            </div>
+            <div class="ms-body">
+              <div class="ms-meta">
+                <h3>Implementation</h3>
+                <span class="ms-duration">4–8 weeks</span>
+              </div>
+              <p>We build and integrate. Production-quality systems connected to your existing stack — ERP, LMS, communication tools, data layers — documented and tested before handover. Your team is trained before we leave.</p>
+              <div class="ms-output">
+                <span class="ms-output-label">You receive</span>
+                <span class="ms-output-val">A live AI-integrated workflow system. Full documentation. Trained staff. You own it completely — no ongoing dependency on us.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="method-step reveal">
+            <div class="ms-left">
+              <div class="ms-num">05</div>
+            </div>
+            <div class="ms-body">
+              <div class="ms-meta">
+                <h3>Optimization</h3>
+                <span class="ms-duration">Ongoing</span>
+              </div>
+              <p>After deployment, we measure against the original success metrics, fix what needs fixing, and ensure the system improves — not degrades — over the first 90 days.</p>
+              <div class="ms-output">
+                <span class="ms-output-label">You receive</span>
+                <span class="ms-output-val">A performance report measured against the original goals. Iteration plan for the next quarter.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="method-cta-row reveal">
+          <a href="#contact" class="btn btn-primary">Book a Discovery Call — It's Free</a>
+          <p class="method-cta-note">If we are not the right fit for your situation, we will tell you — and point you toward who might be.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION 4 — WHAT CHANGES (outcomes)
+    ============================================================ -->
+    <section id="outcomes" class="section section-dark">
+      <div class="container">
+        <div class="section-tag-row reveal">
+          <span class="tag tag-light">What Changes</span>
+        </div>
+
+        <h2 class="section-h2 section-h2-light reveal">
+          What your organization looks like<br/>after an engagement.
+        </h2>
+
+        <div class="outcomes-grid">
+
+          <div class="outcome-card reveal">
+            <div class="oc-num">01</div>
+            <h3>Workflows that run without the people who used to hold them together.</h3>
+            <p>Institutional knowledge stops living in specific people's heads. Processes become structured, documented, and executable by anyone in the role.</p>
+          </div>
+
+          <div class="outcome-card reveal">
+            <div class="oc-num">02</div>
+            <h3>AI tools your team actually uses — because the tools fit the workflow.</h3>
+            <p>When AI is layered onto a redesigned workflow rather than an old one, adoption happens naturally. Staff use the system because it makes their work easier, not because they were told to.</p>
+          </div>
+
+          <div class="outcome-card reveal">
+            <div class="oc-num">03</div>
+            <h3>A documented, measurable answer to "what did the AI project achieve."</h3>
+            <p>Every engagement defines success in business terms before it begins. At the end, you have specific numbers — not impressions — to show leadership, boards, and stakeholders.</p>
+          </div>
+
+          <div class="outcome-card reveal">
+            <div class="oc-num">04</div>
+            <h3>A system you own completely, with no ongoing dependency on us.</h3>
+            <p>We design to exit cleanly. Full documentation, trained staff, and systems that your team can operate, maintain, and extend without us in the room.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION 5 — SERVICES
+    ============================================================ -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-tag-row reveal">
+          <span class="tag">Services</span>
+        </div>
+
+        <h2 class="section-h2 reveal">The specific things we do.</h2>
+        <p class="section-sub reveal">
+          Consulting and implementation across the full AI adoption lifecycle. Each service is a node in the methodology you just read — not a standalone offering.
+        </p>
+
+        <div class="services-wrap">
+
+          <div class="svc-group reveal">
+            <div class="svc-group-label">Understand</div>
+            <div class="svc-cards">
+              <div class="svc-card">
+                <div class="svc-icon" aria-hidden="true">
+                  <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" width="20" height="20"><circle cx="10" cy="10" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+                </div>
+                <div class="svc-text">
+                  <h4>AI Workflow Discovery</h4>
+                  <p>Structured mapping of every workflow — surfacing where time is lost, decisions are delayed, and effort is wasted.</p>
+                  <span class="svc-outcome">So that you know exactly where AI can create business value before spending anything.</span>
+                </div>
+              </div>
+              <div class="svc-card">
+                <div class="svc-icon" aria-hidden="true">
+                  <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" width="20" height="20"><polyline points="21 11 13 3 3 13 3 20 10 20 10 14 14 14 14 20 21 20"/></svg>
+                </div>
+                <div class="svc-text">
+                  <h4>AI Readiness Assessment</h4>
+                  <p>An honest evaluation of where your organization stands — data maturity, workflow clarity, team readiness, tooling gaps.</p>
+                  <span class="svc-outcome">So that you make the right investment at the right time, not the right tool at the wrong moment.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="svc-group reveal">
+            <div class="svc-group-label">Design</div>
+            <div class="svc-cards">
+              <div class="svc-card">
+                <div class="svc-icon" aria-hidden="true">
+                  <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" width="20" height="20"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+                </div>
+                <div class="svc-text">
+                  <h4>Strategic AI Consulting</h4>
+                  <p>We build your AI strategy from first principles — what to automate, what to augment, what to leave alone, and in what sequence.</p>
+                  <span class="svc-outcome">So that every AI investment has a clear business case and a measurable success criterion before it begins.</span>
+                </div>
+              </div>
+              <div class="svc-card">
+                <div class="svc-icon" aria-hidden="true">
+                  <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" width="20" height="20"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                </div>
+                <div class="svc-text">
+                  <h4>Business Process Optimization</h4>
+                  <p>Before AI, often the process itself needs fixing. We redesign the underlying workflow logic first — then layer intelligence on top of something that actually works.</p>
+                  <span class="svc-outcome">So that AI amplifies a functional process rather than accelerating a broken one.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="svc-group reveal">
+            <div class="svc-group-label">Build</div>
+            <div class="svc-cards">
+              <div class="svc-card">
+                <div class="svc-icon" aria-hidden="true">
+                  <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" width="20" height="20"><path d="M16 18l6-6-6-6"/><path d="M8 6l-6 6 6 6"/></svg>
+                </div>
+                <div class="svc-text">
+                  <h4>AI Integration</h4>
+                  <p>Production integration of AI into your existing systems — ERP, LMS, CRM, communication tools — with documented architecture and clean data flows.</p>
+                  <span class="svc-outcome">So that your tools talk to each other and your team stops manually moving data between systems.</span>
+                </div>
+              </div>
+              <div class="svc-card">
+                <div class="svc-icon" aria-hidden="true">
+                  <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" width="20" height="20"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="12" y="3" width="7" height="7" rx="1"/><rect x="3" y="12" width="7" height="7" rx="1"/><rect x="12" y="12" width="7" height="7" rx="1"/></svg>
+                </div>
+                <div class="svc-text">
+                  <h4>AI Agent Design</h4>
+                  <p>Purpose-built AI agents that handle specific operational tasks — routing, responding, classifying, escalating — trained on your data and your rules.</p>
+                  <span class="svc-outcome">So that repetitive decision-making happens automatically, and your team handles only what requires human judgment.</span>
+                </div>
+              </div>
+              <div class="svc-card">
+                <div class="svc-icon" aria-hidden="true">
+                  <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" width="20" height="20"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                </div>
+                <div class="svc-text">
+                  <h4>Workflow Automation</h4>
+                  <p>We replace the manual steps in your core workflows with automated pipelines — built to your processes, not off-the-shelf templates.</p>
+                  <span class="svc-outcome">So that your staff's time shifts from execution to judgment.</span>
+                </div>
+              </div>
+              <div class="svc-card">
+                <div class="svc-icon" aria-hidden="true">
+                  <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" width="20" height="20"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <div class="svc-text">
+                  <h4>Internal AI Adoption</h4>
+                  <p>We design the rollout, train the team, and build the documentation so AI adoption lands properly — not as a tool people quietly stop using after week two.</p>
+                  <span class="svc-outcome">So that the investment produces sustained behavior change, not a one-week novelty.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION 6 — SOLUTIONS (by vertical)
+    ============================================================ -->
+    <section id="solutions" class="section section-stone">
+      <div class="container">
+        <div class="section-tag-row reveal">
+          <span class="tag">Solutions</span>
+        </div>
+
+        <h2 class="section-h2 reveal">Which of these describes<br/>your organization?</h2>
+        <p class="section-sub reveal">
+          KapoorAI works across sectors where operational complexity is high and AI adoption has been slow or poorly executed. The methodology is the same. The application is specific.
+        </p>
+
+        <div class="solutions-grid">
+
+          <div class="sol-card sol-card-featured reveal">
+            <div class="sol-top">
+              <div class="sol-badge sol-badge-live">Live</div>
+              <div class="sol-icon" aria-hidden="true">
+                <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" width="22" height="22"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3.33 1.67 8.67 1.67 12 0v-5"/></svg>
+              </div>
+            </div>
+            <h3>Educational Institutions</h3>
+            <p>Universities, colleges, and schools where student support, academic workflows, and administrative operations are waiting to be redesigned. Our HelpDesk product was built specifically for this context.</p>
+            <ul class="sol-points">
+              <li>Student query automation and routing</li>
+              <li>LMS + ERP + Google Workspace integration</li>
+              <li>IT governance and DPDP Act compliance</li>
+              <li>Administrative workflow redesign</li>
+            </ul>
+            <a href="#products" class="sol-link">See HelpDesk →</a>
+          </div>
+
+          <div class="sol-card reveal">
+            <div class="sol-top">
+              <div class="sol-badge sol-badge-live">Active</div>
+              <div class="sol-icon" aria-hidden="true">
+                <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" width="22" height="22"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              </div>
+            </div>
+            <h3>Small &amp; Mid-size Businesses</h3>
+            <p>SMEs with operational bottlenecks that no one has had the bandwidth to fix. We map the friction, redesign the process, and integrate AI that actually works in your environment.</p>
+            <ul class="sol-points">
+              <li>Workflow discovery and redesign</li>
+              <li>AI readiness assessment</li>
+              <li>Process automation</li>
+              <li>Internal AI adoption programs</li>
+            </ul>
+            <a href="#contact" class="sol-link">Start a conversation →</a>
+          </div>
+
+          <div class="sol-card sol-card-soon reveal">
+            <div class="sol-top">
+              <div class="sol-badge sol-badge-soon">Accepting early conversations</div>
+              <div class="sol-icon" aria-hidden="true">
+                <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" width="22" height="22"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              </div>
+            </div>
+            <h3>Enterprises</h3>
+            <p>Large organizations where AI adoption has stalled at the pilot stage. Enterprise-grade workflow architecture, implementation governance, and change management support.</p>
+            <ul class="sol-points">
+              <li>AI governance frameworks</li>
+              <li>Enterprise workflow architecture</li>
+              <li>Department-level AI rollouts</li>
+              <li>Change management support</li>
+            </ul>
+            <a href="#contact" class="sol-link">Get in touch →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION 7 — PRODUCTS (HelpDesk)
+    ============================================================ -->
+    <section id="products" class="section">
+      <div class="container">
+        <div class="section-tag-row reveal">
+          <span class="tag">Products</span>
+        </div>
+
+        <h2 class="section-h2 reveal">
+          What happens when we solve a workflow<br/>problem well enough to build a product from it.
+        </h2>
+        <p class="section-sub reveal">
+          KapoorAI HelpDesk emerged from repeated engagements where educational institutions had the same problem: student queries overwhelming staff, with no structured intake, no routing, and no resolution tracking. We built the permanent solution.
+        </p>
+
+        <div class="product-card reveal">
+          <div class="product-left">
+            <div class="product-badge">
+              <span class="product-badge-dot"></span>
+              Pilot Ready
+            </div>
+
+            <div class="product-identity">
+              <div class="product-icon" aria-hidden="true">
+                <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" width="20" height="20"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <div>
+                <span class="product-name">KapoorAI <strong>HelpDesk</strong></span>
+                <span class="product-for">For educational institutions</span>
+              </div>
+            </div>
+
+            <p class="product-tagline">The AI-powered student support platform that answers instantly, routes intelligently, and tracks everything.</p>
+
+            <ul class="product-features">
+              <li>
+                <svg viewBox="0 0 14 14" fill="none" width="13" height="13" aria-hidden="true"><polyline points="2,7 5.5,10.5 12,3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Instant AI responses to student queries
+              </li>
+              <li>
+                <svg viewBox="0 0 14 14" fill="none" width="13" height="13" aria-hidden="true"><polyline points="2,7 5.5,10.5 12,3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Intelligent ticket routing by department
+              </li>
+              <li>
+                <svg viewBox="0 0 14 14" fill="none" width="13" height="13" aria-hidden="true"><polyline points="2,7 5.5,10.5 12,3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Institutional knowledge base management
+              </li>
+              <li>
+                <svg viewBox="0 0 14 14" fill="none" width="13" height="13" aria-hidden="true"><polyline points="2,7 5.5,10.5 12,3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Staff workload reduction — measurably
+              </li>
+              <li>
+                <svg viewBox="0 0 14 14" fill="none" width="13" height="13" aria-hidden="true"><polyline points="2,7 5.5,10.5 12,3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Support analytics and resolution tracking
+              </li>
+              <li>
+                <svg viewBox="0 0 14 14" fill="none" width="13" height="13" aria-hidden="true"><polyline points="2,7 5.5,10.5 12,3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Configurable escalation workflows
+              </li>
+            </ul>
+
+            <div class="product-actions">
+              <a href="#contact" class="btn btn-primary">Request a HelpDesk Pilot</a>
+              <a href="#contact" class="btn btn-outline">Ask a Question</a>
+            </div>
+          </div>
+
+          <!-- Product preview -->
+          <div class="product-right">
+            <div class="browser-frame">
+              <div class="browser-chrome">
+                <div class="browser-dots" aria-hidden="true">
+                  <span class="bd r"></span><span class="bd a"></span><span class="bd g"></span>
+                </div>
+                <span class="browser-url">helpdesk.kapoorai.com</span>
+              </div>
+              <div class="browser-body">
+                <div class="browser-sidebar">
+                  <div class="bs-logo">KapoorAI HelpDesk</div>
+                  <div class="bs-nav">
+                    <div class="bs-nav-item bs-active">Dashboard</div>
+                    <div class="bs-nav-item">Tickets</div>
+                    <div class="bs-nav-item">Knowledge Base</div>
+                    <div class="bs-nav-item">Analytics</div>
+                  </div>
+                </div>
+                <div class="browser-main">
+                  <div class="bm-stats">
+                    <div class="bm-stat">
+                      <span class="bm-val green">847</span>
+                      <span class="bm-label">Resolved today</span>
+                    </div>
+                    <div class="bm-stat">
+                      <span class="bm-val">3.8h</span>
+                      <span class="bm-label">Avg. response</span>
+                    </div>
+                    <div class="bm-stat">
+                      <span class="bm-val violet">91%</span>
+                      <span class="bm-label">AI resolved</span>
+                    </div>
+                  </div>
+                  <div class="bm-tickets">
+                    <div class="bm-ticket">
+                      <span class="bm-badge bm-ai">AI</span>
+                      <span class="bm-text">Fee structure — 3rd year BBA</span>
+                      <span class="bm-time">2m</span>
+                    </div>
+                    <div class="bm-ticket">
+                      <span class="bm-badge bm-routed">Routed</span>
+                      <span class="bm-text">Scholarship application status</span>
+                      <span class="bm-time">7m</span>
+                    </div>
+                    <div class="bm-ticket">
+                      <span class="bm-badge bm-ai">AI</span>
+                      <span class="bm-text">Semester 4 exam schedule</span>
+                      <span class="bm-time">11m</span>
+                    </div>
+                    <div class="bm-ticket">
+                      <span class="bm-badge bm-open">Open</span>
+                      <span class="bm-text">Hostel room transfer request</span>
+                      <span class="bm-time">19m</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 9 — FAQ
+    ============================================================ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section-tag-row reveal">
+          <span class="tag">Common Questions</span>
+        </div>
+
+        <h2 class="section-h2 reveal">Questions we get asked<br/>before every first call.</h2>
+
+        <div class="faq-grid">
+
+          <div class="faq-item reveal">
+            <h3>Is KapoorAI a software company or a consultancy?</h3>
+            <p>Both. We consult — mapping workflows and designing AI strategy — and we build — integrating AI into production systems and shipping products. The distinction matters because we don't just hand you a recommendation document. We stay until the system is live and your team is trained on it.</p>
+          </div>
+
+          <div class="faq-item reveal">
+            <h3>How long does a typical engagement take?</h3>
+            <p>Discovery runs 1–2 weeks. A full implementation engagement typically takes 8–14 weeks from first call to handover, depending on the scope and number of workflows involved. We will give you a specific estimate after the discovery call — not before, because we don't know your workflows yet.</p>
+          </div>
+
+          <div class="faq-item reveal">
+            <h3>How is KapoorAI different from an AI agency?</h3>
+            <p>Most AI agencies start by choosing a tool and then figure out where to apply it. We start by mapping your workflows, identifying where the real friction is, and only then selecting the right technology. The difference shows up in adoption — AI built onto a redesigned workflow gets used. AI bolted onto an old one doesn't.</p>
+          </div>
+
+          <div class="faq-item reveal">
+            <h3>What happens after the engagement ends?</h3>
+            <p>You own everything. Every system we build is fully documented, and your team is trained before we hand over. We do not create systems that require our ongoing presence to function. If you want post-engagement support, we offer it — but you will not need it as a condition of the system working.</p>
+          </div>
+
+          <div class="faq-item reveal">
+            <h3>Do you work with organizations our size?</h3>
+            <p>We have worked with individual schools, college groups, and SMEs. Enterprise engagements are beginning. The methodology scales — what changes is the scope of each phase, not the sequence. If you are uncertain whether we are the right fit, the discovery call will tell you that within 30 minutes.</p>
+          </div>
+
+          <div class="faq-item reveal">
+            <h3>What does the discovery call cost?</h3>
+            <p>Nothing. The 30-minute discovery call is free and obligation-free. If we are not the right fit for your situation, we will tell you honestly — and point you toward someone who might be. We would rather have that conversation than begin an engagement that is not right for either side.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION 10 — ZERO TO ONE (teaser)
+    ============================================================ -->
+    <section id="zero-to-one" class="section section-dark">
+      <div class="container">
+        <div class="z21-teaser">
+          <div class="z21-left reveal">
+            <span class="tag tag-light">Initiative</span>
+            <div class="z21-mark">
+              <span class="z21-large">Zero</span>
+              <span class="z21-small">to</span>
+              <span class="z21-large">One</span>
+            </div>
+            <p class="z21-desc">
+              Conversations with founders, operators, and builders about what it actually looks like to build something from nothing. Not a podcast. Not a highlight reel. A firsthand record of how organizations are genuinely built — the decisions, the mistakes, and the pivots that don't make it to LinkedIn.
+            </p>
+            <a href="#contact" class="btn btn-accent">Get involved →</a>
+          </div>
+          <div class="z21-right reveal">
+            <!-- Banner image -->
+            <div class="z21-banner-wrap">
+              <img
+                src="zero-to-one-banner.png"
+                alt="Zero to One by KapoorAI — Conversations that build. Lessons that last."
+                class="z21-banner"
+                loading="lazy"
+              />
+            </div>
+
+            <!-- Social follow row -->
+            <div class="z21-social">
+              <p class="z21-social-label">Follow the journey</p>
+              <div class="z21-social-links">
+                <a
+                  href="https://www.instagram.com/its_ishankapoor?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="z21-social-btn z21-insta"
+                  aria-label="Follow on Instagram"
+                >
+                  <!-- Instagram icon -->
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18" aria-hidden="true">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                    <circle cx="12" cy="12" r="4"/>
+                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+                  </svg>
+                  Instagram
+                </a>
+                <a
+                  href="https://www.youtube.com/@its_ishankapoor"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="z21-social-btn z21-yt"
+                  aria-label="Subscribe on YouTube"
+                >
+                  <!-- YouTube icon -->
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29.1 29.1 0 0 0 1 12a29.1 29.1 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29.1 29.1 0 0 0 23 12a29.1 29.1 0 0 0-.46-5.58z"/>
+                    <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/>
+                  </svg>
+                  YouTube
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION 11 — ABOUT / FOUNDER (condensed)
+    ============================================================ -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="about-strip reveal">
+          <div class="about-left">
+            <span class="tag">About</span>
+            <h2 class="section-h2">KapoorAI exists because AI adoption deserves better than randomness.</h2>
+            <p>Most organizations that try to adopt AI end up with scattered tools, failed pilots, and confused teams. Not because AI doesn't work — but because no one mapped the workflow before choosing the technology.</p>
+            <p>KapoorAI was built on a single belief: workflow first, AI second. We sit inside organizations, understand their real operations, and build AI systems that actually get used. We have shipped production systems inside schools, conducted legal policy audits, and built products from problems we saw repeatedly. Everything we offer is grounded in that work.</p>
+          </div>
+          <div class="about-right">
+            <div class="founder-card">
+              <div class="founder-top">
+                <div class="founder-avatar" aria-label="Ishan Kapoor">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" width="32" height="32"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                </div>
+                <div>
+                  <span class="founder-name">Ishan Kapoor</span>
+                  <span class="founder-role">Founder, KapoorAI</span>
+                </div>
+              </div>
+              <p class="founder-bio">AI workflow architect. Has designed and shipped production AI systems inside educational institutions — from knowledge base infrastructure to full LMS–ERP integrations and IT governance audits. Building KapoorAI from the conviction that most AI failures are workflow failures in disguise.</p>
+              <a href="https://www.linkedin.com/in/ishankpr/" target="_blank" rel="noopener" class="founder-linkedin">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                Connect on LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION 12 — CONTACT
+    ============================================================ -->
+    <section id="contact" class="section section-stone">
+      <div class="container">
+        <div class="section-tag-row reveal">
+          <span class="tag">Contact</span>
+        </div>
+
+        <h2 class="section-h2 reveal">
+          If you're trying to figure out where<br/>to start with AI — this is the conversation.
+        </h2>
+        <p class="section-sub reveal">
+          Fill this in and we'll come back within one working day with an honest first-look at your situation. Not a pitch. Not a proposal. Just a clear, direct response about whether and how we can help.
+        </p>
+
+        <div class="contact-layout">
+
+          <div class="contact-info reveal">
             <div class="ci-row">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              <a href="mailto:ishan@kapoorai.com">ishan@kapoorai.com</a>
+              <div class="ci-icon" aria-hidden="true">
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" width="16" height="16"><path d="M3 4h14c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1H3c-.55 0-1-.45-1-1V5c0-.55.45-1 1-1z"/><polyline points="18,5 10,11 2,5"/></svg>
+              </div>
+              <div>
+                <span class="ci-label">Email</span>
+                <a href="mailto:ishan@kapoorai.com" class="ci-val">ishan@kapoorai.com</a>
+              </div>
             </div>
             <div class="ci-row">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-              <span>Ishan Kapoor &nbsp;·&nbsp; Founder, KapoorAI</span>
+              <div class="ci-icon" aria-hidden="true">
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" width="16" height="16"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" transform="scale(0.75) translate(2,2)"/><rect x="2" y="9" width="4" height="12" transform="scale(0.75) translate(2,2)"/><circle cx="4" cy="4" r="2" transform="scale(0.75) translate(2,2)"/></svg>
+              </div>
+              <div>
+                <span class="ci-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/ishankpr/" target="_blank" rel="noopener" class="ci-val">linkedin.com/in/ishankpr</a>
+              </div>
             </div>
             <div class="ci-row">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-              <a href="https://www.linkedin.com/in/ishankpr/" target="_blank">linkedin.com/in/ishankpr</a>
+              <div class="ci-icon" aria-hidden="true">
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" width="16" height="16"><path d="M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/><path d="M16.8 18c0-3.2-3.5-5.8-7.8-5.8S1.2 14.8 1.2 18"/></svg>
+              </div>
+              <div>
+                <span class="ci-label">Founder</span>
+                <span class="ci-val">Ishan Kapoor</span>
+              </div>
+            </div>
+            <div class="ci-row">
+              <div class="ci-icon" aria-hidden="true">
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" width="16" height="16"><path d="M10 2C6.7 2 4 4.7 4 8c0 4.5 6 10 6 10s6-5.5 6-10c0-3.3-2.7-6-6-6zm0 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+              </div>
+              <div>
+                <span class="ci-label">Location</span>
+                <span class="ci-val">Pune, Maharashtra, India</span>
+              </div>
+            </div>
+
+            <div class="ci-risk">
+              <p>The discovery call is free. If we are not the right fit for your situation, we will tell you — and point you toward who might be.</p>
             </div>
           </div>
-        </div>
-        <div class="contact-right fade-up">
-          <form id="contactForm" class="contact-form">
+
+          <form class="contact-form reveal" id="contact-form" novalidate>
             <div class="form-row-2">
               <div class="field">
-                <label for="fname">Name</label>
-                <input type="text" id="fname" name="name" placeholder="Your full name" required />
+                <label for="cf-name">Name</label>
+                <input type="text" id="cf-name" name="name" placeholder="Your full name" required autocomplete="name" />
               </div>
               <div class="field">
-                <label for="frole">Role</label>
-                <input type="text" id="frole" name="role" placeholder="Principal / Director / Admin" />
+                <label for="cf-role">Role</label>
+                <input type="text" id="cf-role" name="role" placeholder="CEO, CTO, Director…" autocomplete="organization-title" />
               </div>
             </div>
             <div class="field">
-              <label for="finst">Institution</label>
-              <input type="text" id="finst" name="institution" placeholder="Name of your school or college" required />
+              <label for="cf-org">Organization</label>
+              <input type="text" id="cf-org" name="organization" placeholder="Your company, college, or institution" required autocomplete="organization" />
             </div>
             <div class="field">
-              <label for="ftype">Institution Type</label>
-              <select id="ftype" name="type">
-                <option value="">Select...</option>
-                <option>School (K–12)</option>
-                <option>Junior College</option>
-                <option>College / University</option>
-                <option>Coaching Institute</option>
+              <label for="cf-type">Organization type</label>
+              <select id="cf-type" name="type">
+                <option value="">Select…</option>
+                <option>Educational Institution</option>
+                <option>Small / Mid-size Business</option>
+                <option>Enterprise</option>
+                <option>Startup</option>
                 <option>Other</option>
               </select>
             </div>
             <div class="field">
-              <label for="fmsg">Where is the most friction in your operations right now?</label>
-              <textarea id="fmsg" name="message" rows="4" placeholder="Describe what's slowing your institution down..."></textarea>
+              <label for="cf-msg">What are you trying to solve?</label>
+              <textarea id="cf-msg" name="message" rows="4" placeholder="Describe the operational problem you are trying to fix. The more specific, the more useful our first response will be."></textarea>
             </div>
-            <button type="submit" class="btn-primary btn-full">
-              <span class="btn-label">Send Message</span>
-              <span class="btn-spin" style="display:none">Sending...</span>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span class="btn-label">Send to Ishan</span>
+              <span class="btn-loading" style="display:none" aria-hidden="true">Sending…</span>
             </button>
-            <p class="form-note">We respond within one working day.</p>
+            <p class="form-note">Ishan reviews every submission personally. We respond within one working day.</p>
           </form>
+
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER -->
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-row">
+      <div class="footer-top">
         <div class="footer-brand">
-          <a href="#" class="logo footer-logo">Kapoor<span>AI</span></a>
-          <p>Workflow intelligence and operational systems for educational institutions.</p>
-        </div>
-        <div class="footer-nav">
-          <div class="fn-col">
-            <h5>Navigation</h5>
-            <a href="#problem">The Problem</a>
-            <a href="#services">What We Build</a>
-            <a href="#work">Our Work</a>
-            <a href="#process">Process</a>
+          <a href="#home" class="logo footer-logo">
+            <span class="logo-mark">K</span>apoorAI
+          </a>
+          <p>Workflow-first AI integration for organizations that operate at scale.</p>
+          <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/ishankpr/" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer-social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="mailto:ishan@kapoorai.com" aria-label="Email" class="footer-social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
           </div>
-          <div class="fn-col">
-            <h5>Contact</h5>
-            <a href="mailto:ishan@kapoorai.com">ishan@kapoorai.com</a>
-            <a href="https://www.linkedin.com/in/ishankpr/" target="_blank">LinkedIn</a>
+        </div>
+
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h5>Navigate</h5>
+            <a href="#problem">The Problem</a>
+            <a href="#method">Method</a>
+            <a href="#services">Services</a>
+            <a href="#solutions">Solutions</a>
+            <a href="#products">Products</a>
+            <a href="#faq">FAQ</a>
+          </div>
+          <div class="footer-col">
+            <h5>Services</h5>
+            <a href="#services">AI Workflow Discovery</a>
+            <a href="#services">Strategic AI Consulting</a>
+            <a href="#services">AI Integration</a>
+            <a href="#services">AI Agent Design</a>
+            <a href="#services">Process Optimization</a>
+          </div>
+          <div class="footer-col">
+            <h5>Products</h5>
+            <a href="#products">KapoorAI HelpDesk</a>
+            <a href="#contact">Request a Pilot</a>
+          </div>
+          <div class="footer-col">
+            <h5>Initiatives</h5>
+            <a href="#zero-to-one">Zero to One</a>
             <a href="#contact">Get in Touch</a>
           </div>
         </div>
       </div>
+
       <div class="footer-base">
         <span>© 2026 KapoorAI. All rights reserved.</span>
         <span>kapoorai.com</span>
